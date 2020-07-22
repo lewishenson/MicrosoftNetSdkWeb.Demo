@@ -15,7 +15,7 @@ Ensure that the integration test project references the Microsoft.NET.Sdk.Web in
 </Project>
 ```
 
-## Demostration
+## Demonstration
 This repository demos this behaviour. There is a simple web application (based on the standard WebAPI template) that has an endpoint to return weather forecasts.
 
 There are two integration test projects each with a copy of the same single test. The test in `MicrosoftNetSdkWeb.Demo.WorkingTest.csproj` will pass while the test in `MicrosoftNetSdkWeb.Demo.BrokenTest.csproj` will fail. The only difference is the SDK reference in the `*.csproj` file.
